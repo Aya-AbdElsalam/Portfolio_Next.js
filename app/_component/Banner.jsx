@@ -22,17 +22,17 @@ export default function Banner() {
           </h1>
           <div className="relative h-24">
             <h1
-              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform1`}
+              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform1 bg-[#284260]`}
             >
               Front-End Developer
             </h1>
             <h1
-              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform2 `}
+              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform2 bg-[#284260]`}
             >
               Creative Coder
             </h1>
             <h1
-              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform3`}
+              className={`text-4xl xs:text-5xl  sm:text-6xl w-full text-txtPrimary ${mainFont.className} font-bold mb-5 absolute top-0 left-0 txt-transform3 bg-[#284260]`}
             >
               React Developer
             </h1>
