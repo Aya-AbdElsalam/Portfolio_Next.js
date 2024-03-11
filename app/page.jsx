@@ -1,8 +1,10 @@
-import { notFound } from 'next/navigation'
 import React from 'react'
 
 export default function page() {
-  return{
-    kkkkkkkkkk
-  }
+    return(
+        <>
+<h1>NotFound</h1>
+        </>
+    )
+  
 }

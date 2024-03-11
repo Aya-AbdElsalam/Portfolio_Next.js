@@ -11,7 +11,7 @@ export default function Layout({
   })  {
 
   return (
-    <html lang={locale} dir={locale==="en"?"ltr":"rtl"}>
+    <html >
       <body
         className={`text-txtPrimary ${TypographyFont.className} overflow-x-hidden bg-bgPrimary`}
       >
