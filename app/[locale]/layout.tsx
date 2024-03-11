@@ -25,12 +25,11 @@ export default function RootLayout({
   const messages = useMessages();
 
   return (
-    <html dir={locale==="en"?"ltr":"rtl"}>
+    <html dir={locale==="en"?"ltr":"rtl"} lang={locale}>
       <body
         className={`text-txtPrimary ${TypographyFont.className} overflow-x-hidden bg-bgPrimary`}
       >
-                <NextIntlClientProvider locale={locale} messages={messages}>
-
+        <NextIntlClientProvider locale={locale} messages={messages}>
         <HeaderComponent />
         {children}
         <Footer />
