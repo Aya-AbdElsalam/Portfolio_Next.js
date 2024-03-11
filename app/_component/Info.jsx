@@ -35,7 +35,7 @@ export default function Info() {
   }, []);
   return (
     <div className=" bg-cover relative" >
-      <Image src={bg} className="absolute w-full top-0 left-0 h-full -z-10" alt="background" width={100} height={100}/>
+      <Image src={bg} className="absolute w-full top-0 left-0 h-full -z-10" alt="background" width={1000} height={500}/>
       <div className="container flex flex-wrap py-11">
         <div className="w-64 grow bg-overlay/75 lg:mt-28 border-4 border-bgThird/45">
           <div className="bg-bgThird/45 h-16 relative">
