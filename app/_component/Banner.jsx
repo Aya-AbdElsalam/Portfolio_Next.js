@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 import { Saira_Extra_Condensed } from "next/font/google";
 import bg from "../_images/_animation/bg.gif"
+import bg2 from "../_images/bg5.webp"
 import Image from "next/image";
 import Link from "next/link";
-import bg2 from "../_images/bg1.webp"
 const mainFont = Saira_Extra_Condensed({
   subsets: ["latin"],
   weight: ["700", "400"],
@@ -15,7 +15,7 @@ export default function Banner() {
       id="Home"
       className="relative "
     >
-      <Image src={bg2} className="absolute w-full top-0 left-0 h-full -z-10"/>
+      <Image src={bg2} className="absolute w-full top-0 left-0 h-full -z-10" alt="background" width={100} height={100} priority/>
       <div className="absolute inset-0 bg-overlay/70 "></div>
       <div className="mx-auto max-w-screen-xl px-9 py-32 md:flex  justify-around md:h-screen md:items-center z-10 relative container text-center sm:text-left">
         <div className="min-w-[400px] flex flex-col items-center	md:items-start">
@@ -64,16 +64,6 @@ export default function Banner() {
             src={bg}
             alt="developer"
           />
-          {/* <video width="320" height="240" controls preload="none">
-            <source src="/path/to/video.mp4" type="video/mp4" />
-            <track src={bg} kind="subtitles" srcLang="en" label="English" />
-            Your browser does not support the video tag.
-          </video> */}
-          {/* <video autoplay loop muted playsinline width="320" height="240"  preload>
-  <source src={bg} type="video/webm" />
-  Your browser does not support the video tag.
-
-</video> */}
         </div>
       </div>
     </section>
