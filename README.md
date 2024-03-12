@@ -1,3 +1,28 @@
+# About the Project
+Introducing my inaugural project using Next.js which supports two languages! 🌟🌟  <br/>
+Behold, my personal portfolio awaits your exploration.
+
+<br />
+
+👉 **Live Demo :** (https://portfolio-aya-abdelsalam.vercel.app)
+
+# The site
+![aya](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/8601f628-f7e3-44ce-9d89-e2756feb97c2)
+
+# PageSpeed 
+![portfolio](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/684eb6cd-1f8a-47bb-8e8c-3b2c47e6561f)
+![portfolioPhone](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/fb2b52a1-8e81-4938-a811-de4389293ae7)
+
+
+# Tools
+- Next js
+- tailwind
+- email js
+- SweetAlert2
+- next intl
+
+  
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
