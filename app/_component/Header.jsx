@@ -26,22 +26,22 @@ export default function HeaderComponent() {
         <nav aria-label="Global">
           <ul className="flex items-center gap-6">
             <li >
-              <Link className={`transition hover:text-border ${activeLink===t('Home')&&"text-border border-b-2 border-border"}`} href="../../#Home" onClick={(e)=>{
+              <Link className={`transition hover:text-border ${activeLink===t('Home')&&"text-border border-b-2 border-border"}`} href="/#Home" onClick={(e)=>{
                 setActiveLink(e.target.innerText)
               }}> {t('Home')} </Link>
             </li>
             <li>
-              <Link className={`transition hover:text-border ${activeLink===t('About')&&"text-border border-b-2 border-border"}`} href="../../#About"  onClick={(e)=>{
+              <Link className={`transition hover:text-border ${activeLink===t('About')&&"text-border border-b-2 border-border"}`} href="/#About"  onClick={(e)=>{
                 setActiveLink(e.target.innerText)
               }}> {t('About')} </Link>
             </li>
             <li>
-            <Link className={`transition hover:text-border ${activeLink===t('Projects')&&"text-border border-b-2 border-border"}`} href="../../#Projects" onClick={(e)=>{
+            <Link className={`transition hover:text-border ${activeLink===t('Projects')&&"text-border border-b-2 border-border"}`} href="/#Projects" onClick={(e)=>{
                 setActiveLink(e.target.innerText)
               }}> {t('Projects')} </Link>
             </li>
             <li>
-            <Link className={`transition hover:text-border ${activeLink===t('Contect')&&"text-border border-b-2 border-border"}`} href="../../#Contect" onClick={(e)=>{
+            <Link className={`transition hover:text-border ${activeLink===t('Contect')&&"text-border border-b-2 border-border"}`} href="/#Contect" onClick={(e)=>{
                 setActiveLink(e.target.innerText)
               }}> {t('Contect')} </Link>
             </li>

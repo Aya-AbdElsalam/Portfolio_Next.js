@@ -58,7 +58,7 @@ export default function Banner() {
         >
           <Image
             priority
-            className="h-full w-full"
+            className="h-full w-full hidden md:inline-block"
             width={100}
             height={100}
             src={bg}
