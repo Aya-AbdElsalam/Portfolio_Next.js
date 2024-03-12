@@ -1,13 +1,13 @@
-import html from "../../assets/html.webp"
-import css from "../../assets/css.webp"
-import js from "../../assets/js.webp"
-import typescript from "../../assets/typescript.webp"
-import bootstrap from "../../assets/bootstrap.webp"
-import mui from "../../assets/mui.webp"
-import react from "../../assets/react.webp"
-import next from "../../assets/next.webp"
-import sass from "../../assets/sass.webp"
-import github from "../../assets/github.webp"
+import html from "../_assets/html.webp"
+import css from "../_assets/css.webp"
+import js from "../_assets/js.webp"
+import typescript from "../_assets/typescript.webp"
+import bootstrap from "../_assets/bootstrap.webp"
+import mui from "../_assets/mui.webp"
+import react from "../_assets/react.webp"
+import next from "../_assets/next.webp"
+import sass from "../_assets/sass.webp"
+import github from "../_assets/github.webp"
 import Image from 'next/image'
 export default function Skills({params}) {
   return (

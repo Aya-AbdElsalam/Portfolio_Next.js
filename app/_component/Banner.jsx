@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 //import images 
-import bg from "../../assets/_animation/bg.gif"
-import bg2 from "../../assets/bg1.webp"
+import bg from "../_assets/_animation/bg.gif"
+import bg2 from "../_assets/bg1.webp"
 //import font
 import { Saira_Extra_Condensed } from "next/font/google";
 const mainFont = Saira_Extra_Condensed({
