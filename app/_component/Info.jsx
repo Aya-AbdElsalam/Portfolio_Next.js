@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 //for animation svg
 import lottie from "lottie-web";
 //import images
-import bg from "@/assets/bg5.webp";
+import bg from "../../assets/bg5.webp";
 import Image from "next/image";
 export default function Info() {
   const t = useTranslations("Index");
@@ -17,21 +17,21 @@ export default function Info() {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("@/assets/_animation/info.json"),
+      animationData: require("../../assets/_animation/info.json"),
     });
     lottie.loadAnimation({
       container: Education.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("@/assets/_animation/education.json"),
+      animationData: require("../../assets/_animation/education.json"),
     });
     lottie.loadAnimation({
       container: contact.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("@/assets/_animation/contact.json"),
+      animationData: require("../../assets/_animation/contact.json"),
     });
   }, []);
   return (
