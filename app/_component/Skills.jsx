@@ -1,16 +1,15 @@
-import html from "../_images/html.webp"
-import css from "../_images/css.webp"
-import js from "../_images/js.webp"
-import typescript from "../_images/typescript.webp"
-import bootstrap from "../_images/bootstrap.webp"
-import mui from "../_images/mui.webp"
-import react from "../_images/react.webp"
-import next from "../_images/next.webp"
-import sass from "../_images/sass.webp"
-import github from "../_images/github.webp"
+import html from "@/assets/html.webp"
+import css from "@/assets/css.webp"
+import js from "@/assets/js.webp"
+import typescript from "@/assets/typescript.webp"
+import bootstrap from "@/assets/bootstrap.webp"
+import mui from "@/assets/mui.webp"
+import react from "@/assets/react.webp"
+import next from "@/assets/next.webp"
+import sass from "@/assets/sass.webp"
+import github from "@/assets/github.webp"
 import Image from 'next/image'
 export default function Skills({params}) {
-  console.log("params")
   return (
     <div className={` bg-bgPrimary whitespace-nowrap overflow-hidden ${params.locale==="ar"&&"flex flex-row-reverse"}`}>
       <div className={`scroll-smooth py-11 scrollSkills inline-block w-fit ` }>

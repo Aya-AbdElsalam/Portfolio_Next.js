@@ -1,18 +1,17 @@
 "use client";
-//style sheet for arabic language
-import projectsList from "../../../_data/projectsList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Josefin_Sans, Play } from "next/font/google";
-import Image from "next/image";
-import {
-  faArrowLeft,
-  faArrowRight,
-  faLinkSlash,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+//project list
+import projectsList from "../../../_data/projectsList";
+import Image from "next/image";
+//import icons
+import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+//import font
+import { Josefin_Sans, Play } from "next/font/google";
 const mainFont = Play({
   subsets: ["latin"],
   weight: "700",
@@ -34,7 +33,6 @@ export default function page({ params }) {
     setImg(imgArr[index]);
     aboutProject.current.innerHTML =params.locale==="en"? choosenProject.aboutTheSite:choosenProject.aboutTheSite_ar;
   }, [choosenProject.aboutTheSite, imgArr, index]);
-  //project details DOM
   return (
     <div className="bg-bgPrimary ">
       <div className="w-full h-[100vh]">
@@ -51,16 +49,16 @@ export default function page({ params }) {
         <Link
           target="_blank"
           href={choosenProject.liveMode}
-          className="p-3 bg-bgThird"
+          className="p-3 bg-bgThird hover:bg-bgThird/50"
         >
-        {t('LiveDemo')} <FontAwesomeIcon icon={faMagnifyingGlass} />
+        {t('LiveDemo')} <FaExternalLinkAlt className="inline-block"/>
         </Link>
         <Link
           target="_blank"
           href={choosenProject.code}
-          className="p-3 bg-bgThird"
+          className="p-3 bg-bgThird hover:bg-bgThird/50"
         >
-           {t('Code')}<FontAwesomeIcon icon={faLinkSlash} />
+           {t('Code')}<FaCode className="inline-block"/>
         </Link>
       </div>
       <div className="py-8 container ">
@@ -71,7 +69,6 @@ export default function page({ params }) {
               {params.locale==="en"? choosenProject.title:choosenProject.title_ar}
             </h2>
           </div>
-
           <p
             className={` ${TypographyFont.className} text-txtSecondary text-xl`}
             ref={aboutProject}
@@ -92,7 +89,6 @@ export default function page({ params }) {
                 className=" group relative rounded-3xl  overflow-hidden border border-border px-8 py-3 focus:outline-none focus:ring w-fit"
               >
                 <span className="absolute inset-y-0 left-0 w-[2px] bg-border transition-all group-hover:w-full group-active:bg-bgSecondary"></span>
-
                 <span className="text-base relative font-medium text-border transition-colors group-hover:text-txtPrimary">
                   {p}
                 </span>
@@ -124,7 +120,7 @@ export default function page({ params }) {
 
                   }}
                 >
-                  <FontAwesomeIcon icon={faArrowLeft} />
+                 <MdOutlineKeyboardDoubleArrowLeft/>
                 </span>
                 <span
                   className="p-3 bg-bgThird/75 cursor-pointer"
@@ -133,7 +129,7 @@ export default function page({ params }) {
 
                   }}
                 >
-                  <FontAwesomeIcon icon={faArrowRight} />
+                  <MdKeyboardDoubleArrowRight/>
                 </span>
               </div>
             </div>

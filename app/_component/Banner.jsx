@@ -1,9 +1,11 @@
 import { useTranslations } from "next-intl";
-import { Saira_Extra_Condensed } from "next/font/google";
-import bg from "../_images/_animation/bg.gif"
-import bg2 from "../_images/bg1.webp"
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+//import images 
+import bg from "@/assets/_animation/bg.gif"
+import bg2 from "@/assets/bg1.webp"
+//import font
+import { Saira_Extra_Condensed } from "next/font/google";
 const mainFont = Saira_Extra_Condensed({
   subsets: ["latin"],
   weight: ["700", "400"],

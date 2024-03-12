@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import {  Josefin_Sans } from "next/font/google";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import "../globals.css";
 import HeaderComponent from "../_component/Header";
 import Footer from "../_component/Footer";
-import {NextIntlClientProvider, useMessages} from 'next-intl';
-import {notFound} from 'next/navigation';
+//import font
+import { Josefin_Sans } from "next/font/google";
 const TypographyFont = Josefin_Sans({
   subsets: ["latin"],
   weight: "400",
@@ -17,22 +17,21 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
   const messages = useMessages();
-
   return (
-    <html dir={locale==="en"?"ltr":"rtl"} lang={locale}>
+    <html dir={locale === "en" ? "ltr" : "rtl"} lang={locale}>
       <body
         className={`text-txtPrimary ${TypographyFont.className} overflow-x-hidden bg-bgPrimary`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-        <HeaderComponent />
-        {children}
-        <Footer />
+          <HeaderComponent />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

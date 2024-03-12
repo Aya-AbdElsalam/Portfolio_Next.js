@@ -1,18 +1,18 @@
 "use client";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
-import { Play } from "next/font/google";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
+//import icons
+import { LuMessageCircle } from "react-icons/lu";
+//import font
+import { Play } from "next/font/google";
 const mainFont = Play({
   subsets: ["latin"],
   weight: "700",
 });
 export default function Contact() {
   const t = useTranslations('Index');
-
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,6 +37,7 @@ export default function Contact() {
           });
         },
         (error) => {
+          //faild
           Swal.fire({
             position: "center",
             icon: "error",
@@ -56,7 +57,6 @@ export default function Contact() {
           <div className="relative before:absolute before:bg-border before:w-3/12 before:h-1 before:-bottom-2 before:top-auto ">
             <h2 className={`${mainFont.className} text-4xl `}>{t('contactTitle')}</h2>
           </div>
-
           <p className={` text-txtSecondary`}>
             {t('contactTypography')}
           </p>
@@ -115,11 +115,9 @@ export default function Contact() {
                 className="group relative inline-block focus:outline-none focus:ring"
               >
                 <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-bgPrimary transition-transform group-hover:translate-x-0 group-hover:translate-y-0 group-hover:bg-border"></span>
-                <span className="relative text-txtPrimary inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
+                <span className="relative flex text-txtPrimary  border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
                   {t('SendMessage')} &nbsp; &nbsp;
-                  <i>
-                    <FontAwesomeIcon icon={faComment} />
-                  </i>
+                  <LuMessageCircle className="w-6 h-6" />
                 </span>
               </button>
             </div>
