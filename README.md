@@ -11,7 +11,7 @@ Behold, my personal portfolio awaits your exploration.
 
 # PageSpeed 
 ![portfolio](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/684eb6cd-1f8a-47bb-8e8c-3b2c47e6561f)
-![portfolioPhone](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/fb2b52a1-8e81-4938-a811-de4389293ae7)
+![portfolioPhone](https://github.com/Aya-AbdElsalam/Portfolio_Next.js/assets/152267387/9174fdb5-d41f-42a5-9103-99de87198935)
 
 
 # Tools
