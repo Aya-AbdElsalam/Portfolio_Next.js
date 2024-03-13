@@ -37,17 +37,17 @@ export default function Banner() {
           priority
         />
       )}
-      {windowWidth && (windowWidth <= 786 && windowWidth > 412 )&&(
+      {windowWidth && (windowWidth <= 786 && windowWidth > 415 )&&(
         <Image
           src={bg2SmallScreen}
           className="absolute w-full top-0 left-0 h-full -z-10"
           alt="background"
-          width={1000}
+          width={786}
           height={500}
           priority
         />
       )}
-        {windowWidth && windowWidth <= 412&& (
+        {windowWidth && windowWidth <= 415&& (
         <Image
           src={bg2Phone}
           className="absolute w-full top-0 left-0 h-full -z-10"

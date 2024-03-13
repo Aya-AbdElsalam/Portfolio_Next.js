@@ -1,10 +1,13 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 //for animation svg
 import lottie from "lottie-web";
 //import images
 import bg from "../_assets/bg5.webp";
+import bgSmallScreen from "../_assets/bg5SmallScreen.webp";
+import bgPhone from "../_assets/bg5Phone.webp";
+
 import Image from "next/image";
 export default function Info() {
   const t = useTranslations("Index");
@@ -34,15 +37,46 @@ export default function Info() {
       animationData: require("../_assets/_animation/contact.json"),
     });
   }, []);
+      //change images according to width of window
+  const [windowWidth, setWidth] = useState();
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+  },[windowWidth]);
   return (
-    <div className=" bg-cover relative">
-      <Image
-        src={bg}
-        className="absolute w-full top-0 left-0 h-full -z-10"
-        alt="background"
-        width={1000}
-        height={500}
-      />
+    <div className="  relative">
+       {windowWidth && windowWidth > 786 && (
+        <Image
+          src={bg}
+          className="absolute w-full top-0 left-0 h-full -z-10"
+          alt="background"
+          width={1000}
+          height={500}
+          priority
+        />
+      )}
+      {windowWidth && (windowWidth <= 786 && windowWidth > 415 )&&(
+        <Image
+          src={bgSmallScreen}
+          className="absolute w-full top-0 left-0 h-full -z-10"
+          alt="background"
+          width={786}
+          height={500}
+          priority
+        />
+      )}
+        {windowWidth && windowWidth <= 415&& (
+        <Image
+          src={bgPhone}
+          className="absolute w-full top-0 left-0 h-full -z-10"
+          alt="background"
+          width={412}
+          height={900}
+          priority
+        />
+      )}
       <div className="container flex flex-wrap py-11">
         <div className="w-64 grow bg-overlay/75 lg:mt-28 border-4 border-bgThird/45">
           <div className="bg-bgThird/45 h-16 relative">
