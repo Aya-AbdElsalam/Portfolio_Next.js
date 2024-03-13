@@ -3,7 +3,7 @@
 import projectList from "../_data/projectsList";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 //import font
 import { Play } from "next/font/google";
 const mainFont = Play({
@@ -30,6 +30,14 @@ export default function Projects({ params }) {
         ? `translateX(${translate - 320}px)`
         : `translateX(${translate + 320}px)`;
   };
+  //change images according to width of window
+  const [windowWidth, setWidth] = useState();
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+  },windowWidth);
   return (
     <div className="bg-bgPrimary overflow-hidden py-11" id="Projects">
       <div
@@ -44,7 +52,9 @@ export default function Projects({ params }) {
           >
             <Image
               alt={p.title}
-              src={p.img}
+              src={
+                windowWidth && windowWidth > 1055 ? p.img : p.img_small || p.img
+              }
               loading="lazy"
               className="absolute  h-full w-full object-cover object-top opacity-75 transition-opacity group-hover:opacity-25 top-0 "
             />

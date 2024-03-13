@@ -5,6 +5,7 @@ import project2Website from "../_assets/project2Website.webp";
 import project3 from "../_assets/project3.webp";
 import project3Website from "../_assets/project3Website.webp";
 import project4 from "../_assets/project4.webp";
+import project4SmallScrenn from "../_assets/project4Small.webp";
 import project4Website from "../_assets/project4Website.webp";
 import toyqo from "../_assets/toyqo.webp";
 import toyqo2 from "../_assets/toyqo2.webp";
@@ -72,6 +73,7 @@ const ProjectList = [
   {
     id: 4,
     img: project4,
+    img_small: project4SmallScrenn,
     imgAllPages: project4Website,
     title: "IsoTech",
     title_ar: "آيزوتيك",
