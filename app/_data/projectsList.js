@@ -18,6 +18,10 @@ import isoTech from "../_assets/isoTech.webp";
 import IsoTech2 from "../_assets/IsoTech2.webp";
 import dashboard from "../_assets/dashboard.webp";
 import dashboard2 from "../_assets/dashboard2.webp";
+import taqua from "../_assets/taquaSite.webp";
+import taqua2 from "../_assets/taquaSite2.webp";
+import project5Website from "../_assets/project5Website.webp";
+import project5 from "../_assets/project5.webp";
 const ProjectList = [
   {
     id: 1,
@@ -93,6 +97,23 @@ const ProjectList = [
       "IsoTech is an e-commerce platform specializing in electronics, offering users the convenience of purchasing products online and accessing detailed information about each item.<br/> <i>👉This site contains 27 pages, including: Sign In, Sign Up, Home, Shop, Product Details, Blog, Blog Details, About, Cart, Wish List, Contact Us, FAQs, Find Store Location, Privacy Policy, and Terms of Service. Additionally, it features a dashboard with sections such as Blog, Add Blog, Edit Blog, Brand, Comments, Products, Add Product, Edit Product, Team, Add Member, Edit Information of Member, Mail, and Mail Details.</i> ",
     aboutTheSite_ar:
       "إيزوتك هي منصة تجارة إلكترونية متخصصة في الإلكترونيات، توفر للمستخدمين سهولة شراء المنتجات عبر الإنترنت والوصول إلى معلومات مفصلة حول كل عنصر<br/> <i>👈.يحتوي هذا الموقع على 27 صفحة، بما في ذلك: تسجيل الدخول، التسجيل، الصفحة الرئيسية، المتجر، تفاصيل المنتج، المدونة، تفاصيل المدونة، حول، عربة التسوق، قائمة الأمنيات، اتصل بنا، الأسئلة الشائعة، العثور على موقع المتجر، سياسة الخصوصية، وشروط الخدمة. بالإضافة إلى ذلك، يتميز بلوحة تحكم تضم أقسامًا مثل المدونة، إضافة مدونة، تحرير مدونة، العلامة التجارية، التعليقات، المنتجات، إضافة منتج، تحرير منتج، الفريق، إضافة عضو، تحرير معلومات العضو، البريد، وتفاصيل البريد.",
+  },
+
+  {
+    id: 5,
+    img: project5,
+    img_small: project5,
+    imgAllPages: project5Website,
+    title: "Taqua",
+    title_ar: "تقوى",
+    liveMode: "https://taqua-two.vercel.app/",
+    code: "https://github.com/Aya-AbdElsalam/taqua",
+    images: [taqua, taqua2],
+    tools: ["Next js", "Tailwind CSS", "react icons", "Axios", "RESTful API"],
+    aboutTheSite:
+      "An Islamic website that provides access to the chapters of the Quran for reading or listening, as well as offering interpretation of Quranic verses, Hadiths, Azkar, and prayer timings for all Arab countries.",
+    aboutTheSite_ar:
+      "موقع إسلامي يوفر سور القرآن الكريم للقراءة والاستماع، بالإضافة إلى تفسير الآيات القرآنية، ويوفر أيضًا الأحاديث النبوية والأذكار، بالإضافة إلى مواقيت الصلاة لجميع الدول العربية.",
   },
 ];
 export default ProjectList;

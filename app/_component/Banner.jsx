@@ -32,8 +32,8 @@ export default function Banner() {
           src={bg2}
           className="absolute w-full top-0 left-0 h-full -z-10"
           alt="background"
-          width={1000}
-          height={500}
+          width={1200}
+          height={700}
           priority
         />
       )}
