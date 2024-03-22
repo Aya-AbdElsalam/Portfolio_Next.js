@@ -74,6 +74,23 @@ const ProjectList = [
       "Experience Proland's specialized smartwatch platform: from a comprehensive product showcase to quick product views, seamless member management, and effortless product inventory control.Visual aids such as graphical maps offer insightful depictions of sales percentages and visitor statistics, ensuring informed decision- making. <br/> <i>👉 features : Quick product view, add / remove members, and add / remove product </i>",
     aboutTheSite_ar: `استمتع بمنصة الساعات الذكية المتخصصة لـ برولاند: من عرض المنتجات الشامل إلى العروض السريعة للمنتجات، وإدارة الأعضاء بسهولة، والتحكم السلس في مخزون المنتجات. تقدم الوسائط المرئية مثل الخرائط الرسومية تصويرًا مفيدًا لنسب المبيعات وإحصاءات الزوار، مما يضمن اتخاذ قرارات مستنيرة.<br/> <i>👈 المميزات: عرض سريع للمنتجات، إضافة/إزالة الأعضاء، وإضافة/إزالة المنتجات.`,
   },
+
+  {
+    id: 5,
+    img: project5,
+    img_small: project5,
+    imgAllPages: project5Website,
+    title: "Taqua",
+    title_ar: "تقوى",
+    liveMode: "https://taqua-two.vercel.app/",
+    code: "https://github.com/Aya-AbdElsalam/taqua",
+    images: [taqua, taqua2],
+    tools: ["Next js", "Tailwind CSS", "react icons", "Axios", "RESTful API"],
+    aboutTheSite:
+      "An Islamic website that provides access to the chapters of the Quran for reading or listening, as well as offering interpretation of Quranic verses, Hadiths, Azkar, and prayer timings for all Arab countries.",
+    aboutTheSite_ar:
+      "موقع إسلامي يوفر سور القرآن الكريم للقراءة والاستماع، بالإضافة إلى تفسير الآيات القرآنية، ويوفر أيضًا الأحاديث النبوية والأذكار، بالإضافة إلى مواقيت الصلاة لجميع الدول العربية.",
+  },
   {
     id: 4,
     img: project4,
@@ -97,23 +114,6 @@ const ProjectList = [
       "IsoTech is an e-commerce platform specializing in electronics, offering users the convenience of purchasing products online and accessing detailed information about each item.<br/> <i>👉This site contains 27 pages, including: Sign In, Sign Up, Home, Shop, Product Details, Blog, Blog Details, About, Cart, Wish List, Contact Us, FAQs, Find Store Location, Privacy Policy, and Terms of Service. Additionally, it features a dashboard with sections such as Blog, Add Blog, Edit Blog, Brand, Comments, Products, Add Product, Edit Product, Team, Add Member, Edit Information of Member, Mail, and Mail Details.</i> ",
     aboutTheSite_ar:
       "إيزوتك هي منصة تجارة إلكترونية متخصصة في الإلكترونيات، توفر للمستخدمين سهولة شراء المنتجات عبر الإنترنت والوصول إلى معلومات مفصلة حول كل عنصر<br/> <i>👈.يحتوي هذا الموقع على 27 صفحة، بما في ذلك: تسجيل الدخول، التسجيل، الصفحة الرئيسية، المتجر، تفاصيل المنتج، المدونة، تفاصيل المدونة، حول، عربة التسوق، قائمة الأمنيات، اتصل بنا، الأسئلة الشائعة، العثور على موقع المتجر، سياسة الخصوصية، وشروط الخدمة. بالإضافة إلى ذلك، يتميز بلوحة تحكم تضم أقسامًا مثل المدونة، إضافة مدونة، تحرير مدونة، العلامة التجارية، التعليقات، المنتجات، إضافة منتج، تحرير منتج، الفريق، إضافة عضو، تحرير معلومات العضو، البريد، وتفاصيل البريد.",
-  },
-
-  {
-    id: 5,
-    img: project5,
-    img_small: project5,
-    imgAllPages: project5Website,
-    title: "Taqua",
-    title_ar: "تقوى",
-    liveMode: "https://taqua-two.vercel.app/",
-    code: "https://github.com/Aya-AbdElsalam/taqua",
-    images: [taqua, taqua2],
-    tools: ["Next js", "Tailwind CSS", "react icons", "Axios", "RESTful API"],
-    aboutTheSite:
-      "An Islamic website that provides access to the chapters of the Quran for reading or listening, as well as offering interpretation of Quranic verses, Hadiths, Azkar, and prayer timings for all Arab countries.",
-    aboutTheSite_ar:
-      "موقع إسلامي يوفر سور القرآن الكريم للقراءة والاستماع، بالإضافة إلى تفسير الآيات القرآنية، ويوفر أيضًا الأحاديث النبوية والأذكار، بالإضافة إلى مواقيت الصلاة لجميع الدول العربية.",
   },
 ];
 export default ProjectList;
