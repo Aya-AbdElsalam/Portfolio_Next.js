@@ -95,16 +95,19 @@ export default function HeaderComponent() {
             target="_blank"
             aria-label="github"
           >
-          <FaGithub className="h-full w-full" />
+            <FaGithub className="h-full w-full" />
           </Link>
           <span
             className="  text-center rounded-full bg-bgThird w-9 h-9 leading-9	cursor-pointer"
             aria-label="language"
             onClick={(e) => {
-              const nextLocale = e.target.innerText.toLowerCase();
+              const nextLocale = e.target.innerText.toLowerCase().includes("ar")
+                ? window.location.pathname.replace("/en", "/ar")
+                : window.location.pathname.replace("/ar", "/en");
               startTransition(() => {
-                router.replace(`/${nextLocale}`);
+                router.push(`../../${nextLocale}`);
               });
+              console.log(nextLocale);
             }}
           >
             {localActive === "ar" ? "EN" : "AR"}

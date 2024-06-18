@@ -16,13 +16,46 @@ import proland2 from "../_assets/proland2.webp";
 import proland3 from "../_assets/proland3.webp";
 import isoTech from "../_assets/isoTech.webp";
 import IsoTech2 from "../_assets/IsoTech2.webp";
+import Academine from "../_assets/Academine.png";
+import Academine2 from "../_assets/Academine2.png";
+import RealHouse2 from "../_assets/realhouse2.webp";
+import RealHouse from "../_assets/realhouse1.webp";
+
 import dashboard from "../_assets/dashboard.webp";
 import dashboard2 from "../_assets/dashboard2.webp";
 import taqua from "../_assets/taquaSite.webp";
 import taqua2 from "../_assets/taquaSite2.webp";
 import project5Website from "../_assets/project5Website.webp";
 import project5 from "../_assets/project5.webp";
+import project6 from "../_assets/project6.webp";
+import project6Website from "../_assets/project6Website.webp";
+import project7 from "../_assets/project7.webp";
+import project7Website from "../_assets/project7Website.webp";
+
 const ProjectList = [
+  {
+    id: 7,
+    img: project7,
+    img_small: project7Website,
+    imgAllPages: project7Website,
+    lang: "nuxt",
+    title: "Real House ",
+    title_ar: "ريل هوس",
+    liveMode: "https://real-house-eight.vercel.app/",
+    code: "https://github.com/Aya-AbdElsalam/RealHouse",
+    images: [RealHouse, RealHouse2],
+    tools: [
+      "Nuxt js",
+      "tailwindcss primevue",
+      "firebase",
+      "oh-vue-icons",
+      "pinia",
+    ],
+    aboutTheSite:
+      "Real House is a comprehensive real estate website offering property listings for sales and rentals. It features detailed descriptions, high-quality images, virtual tours, and efficient communication tools for buyers. With advanced search filters and market insights, Real House simplifies finding the perfect property. ",
+    aboutTheSite_ar:
+      "موقع ريل هوس هو موقع عقاري شامل يقدم قوائم للعقارات للبيع والإيجار. يتميز بتوفير أوصاف مفصلة، وصور عالية الجودة، وجولات افتراضية، وأدوات تواصل فعالة للمشترين. بفضل فلاتر البحث المتقدمة ورؤى السوق، يجعل البيت الحقيقي عملية العثور على العقار المثالي سهلة وميسرة.",
+  },
   {
     id: 1,
     img: project1,
@@ -34,12 +67,14 @@ const ProjectList = [
     aboutTheSite: `Toyqo is a vibrant online platform dedicated to providing a delightful shopping experience for children\'s toys. Catering to the diverse interests and developmental needs of kids, Toyqo offers a wide array of toys ranging from educational and interactive to imaginative and creative.<br/><i> 👉 features : "Add to cart", "remove from cart", "write comment", and "zooming on images when hovering on them to show their details"</i> `,
     images: [toyqo, toyqo2],
     tools: ["HTML", "CSS", "JavaScript"],
+    lang: "js",
     aboutTheSite_ar: `تويكو هي منصة عبر الإنترنت نشطة مخصصة لتوفير تجربة تسوق ممتعة لألعاب الأطفال. بالتركيز على تلبية الاهتمامات المتنوعة والاحتياجات التنموية للأطفال، تقدم تويكو مجموعة واسعة من الألعاب تتنوع بين التعليمية والتفاعلية والمبتكرة والإبداعية.<br/> <i>👈 المميزات: "إضافة إلى السلة"، "إزالة من السلة"، "كتابة تعليق"، و "التكبير على الصور عند تمرير الماوس عليها لعرض تفاصيلها".</i>`,
   },
   {
     id: 2,
     img: project2,
     imgAllPages: project2Website,
+    lang: "react",
     title: "Pizza",
     title_ar: "بيتزا",
     liveMode: "https://pizza-restaurant-five.vercel.app/",
@@ -64,6 +99,7 @@ const ProjectList = [
     id: 3,
     img: project3,
     imgAllPages: project3Website,
+    lang: "react",
     title: "PROLAND",
     title_ar: "برولاند",
     liveMode: "https://proland-phi.vercel.app/",
@@ -79,6 +115,7 @@ const ProjectList = [
     id: 5,
     img: project5,
     img_small: project5,
+    lang: "next",
     imgAllPages: project5Website,
     title: "Taqua",
     title_ar: "تقوى",
@@ -95,6 +132,7 @@ const ProjectList = [
     id: 4,
     img: project4,
     img_small: project4SmallScrenn,
+    lang: "react",
     imgAllPages: project4Website,
     title: "IsoTech",
     title_ar: "آيزوتيك",
@@ -114,6 +152,30 @@ const ProjectList = [
       "IsoTech is an e-commerce platform specializing in electronics, offering users the convenience of purchasing products online and accessing detailed information about each item.<br/> <i>👉This site contains 27 pages, including: Sign In, Sign Up, Home, Shop, Product Details, Blog, Blog Details, About, Cart, Wish List, Contact Us, FAQs, Find Store Location, Privacy Policy, and Terms of Service. Additionally, it features a dashboard with sections such as Blog, Add Blog, Edit Blog, Brand, Comments, Products, Add Product, Edit Product, Team, Add Member, Edit Information of Member, Mail, and Mail Details.</i> ",
     aboutTheSite_ar:
       "إيزوتك هي منصة تجارة إلكترونية متخصصة في الإلكترونيات، توفر للمستخدمين سهولة شراء المنتجات عبر الإنترنت والوصول إلى معلومات مفصلة حول كل عنصر<br/> <i>👈.يحتوي هذا الموقع على 27 صفحة، بما في ذلك: تسجيل الدخول، التسجيل، الصفحة الرئيسية، المتجر، تفاصيل المنتج، المدونة، تفاصيل المدونة، حول، عربة التسوق، قائمة الأمنيات، اتصل بنا، الأسئلة الشائعة، العثور على موقع المتجر، سياسة الخصوصية، وشروط الخدمة. بالإضافة إلى ذلك، يتميز بلوحة تحكم تضم أقسامًا مثل المدونة، إضافة مدونة، تحرير مدونة، العلامة التجارية، التعليقات، المنتجات، إضافة منتج، تحرير منتج، الفريق، إضافة عضو، تحرير معلومات العضو، البريد، وتفاصيل البريد.",
+  },
+  {
+    id: 6,
+    img: project6,
+    img_small: project6Website,
+    imgAllPages: project6Website,
+    lang: "vue",
+    title: "Academine",
+    title_ar: "أكاديمين",
+    liveMode: "https://academine.vercel.app/",
+    code: "https://github.com/Aya-AbdElsalam/Academine",
+    images: [Academine, Academine2],
+    tools: [
+      "Vue (options API)",
+      "Tailwind CSS",
+      "firebase",
+      "oh-vue-icons",
+      "pinia",
+      "swiper",
+    ],
+    aboutTheSite:
+      "Academine offers a variety of courses and quizzes designed to enhance your skills across multiple disciplines. Enroll today to advance your knowledge and achieve your professional goals. Visit Academine for a seamless and enriching learning journey.",
+    aboutTheSite_ar:
+      "يقدم موقع أكاديمين مجموعة متنوعة من الدورات والاختبارات المصممة لتعزيز مهاراتك في مجالات متعددة. سجل اليوم لتطوير معرفتك وتحقيق أهدافك المهنية. زوروا أكاديمين لتجربة تعليمية سلسة ومثرية.",
   },
 ];
 export default ProjectList;
