@@ -53,10 +53,10 @@ export default function Projects({ params }) {
     <>
       <div
         id="Projects"
-        className={`flex  gap-y-5 container text-[18px] border-y-2 border-y-bgThird  ${mainFont.className} flex-wrap `}
+        className={`flex  container text-[18px] border-y-2 border-y-bgThird  ${mainFont.className} flex-wrap `}
       >
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1 ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1 ${
             tab == "all" && "bg-bgThird"
           }`}
           onClick={() => setTab("all")}
@@ -65,7 +65,7 @@ export default function Projects({ params }) {
           <p>All</p>
         </div>
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1 ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1  ${
             tab == "js" && "bg-bgThird"
           }`}
           onClick={() => setTab("js")}
@@ -74,7 +74,7 @@ export default function Projects({ params }) {
           <p>java script</p>
         </div>
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1 ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1 ${
             tab == "react" && "bg-bgThird"
           }`}
           onClick={() => setTab("react")}
@@ -83,7 +83,7 @@ export default function Projects({ params }) {
           <p>React</p>
         </div>
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1 ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1 ${
             tab == "next" && "bg-bgThird"
           }`}
           onClick={() => setTab("next")}
@@ -92,7 +92,7 @@ export default function Projects({ params }) {
           <p>Next</p>
         </div>
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1  ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1  ${
             tab == "vue" && "bg-bgThird"
           }`}
           onClick={() => setTab("vue")}
@@ -101,7 +101,7 @@ export default function Projects({ params }) {
           <p>Vue js</p>
         </div>
         <div
-          className={`flex gap-2 items-center cursor-pointer min-w-[100px] py-5 justify-center  hover:bg-bgThird px-1 ${
+          className={`flex gap-2 items-center cursor-pointer min-w-[100px] grow border-y border-bgThird py-5 justify-center  hover:bg-bgThird px-1 ${
             tab == "nuxt" && "bg-bgThird"
           }`}
           onClick={() => setTab("nuxt")}
